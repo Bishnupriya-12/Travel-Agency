@@ -20,22 +20,37 @@ public class RegisterUI {
     }
 
     private void initializeUI() {
-        // Left panel for the image
+
         JPanel imagePanel = new JPanel();
+        imagePanel.setPreferredSize(new Dimension(350, 500));
         imagePanel.setBounds(0, 0, 350, 500);
         imagePanel.setLayout(new BorderLayout());
-
-        // Add an image to the panel
+        
         JLabel imageLabel = new JLabel();
-        imageLabel.setIcon(new ImageIcon("src/resources/registerIMG.jpg")); // Add an appropriate image path
         imageLabel.setHorizontalAlignment(SwingConstants.CENTER);
+
+        // Load and scale the image
+        ImageIcon originalIcon = new ImageIcon("src/resources/images/registerIMG.jpg"); // Replace with your image path
+        Image scaledImage = originalIcon.getImage().getScaledInstance(350, 500, Image.SCALE_SMOOTH);
+        imageLabel.setIcon(new ImageIcon(scaledImage));
+
         imagePanel.add(imageLabel, BorderLayout.CENTER);
+        // Left panel for the image
+        // JPanel imagePanel = new JPanel();
+        // imagePanel.setBounds(0, 0, 350, 500);
+        // imagePanel.setLayout(new BorderLayout());
+
+        // // Add an image to the panel
+        // JLabel imageLabel = new JLabel();
+        // imageLabel.setIcon(new ImageIcon("src/resources/registerIMG.jpg")); // Add an appropriate image path
+        // imageLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        // imagePanel.add(imageLabel, BorderLayout.CENTER);
 
         // Right panel for the register form
         JPanel registerPanel = new JPanel();
         registerPanel.setBounds(350, 0, 450, 500);
         registerPanel.setLayout(null);
-        registerPanel.setBackground(new Color(230, 240, 250)); // Light blue background
+        registerPanel.setBackground(new Color(250, 240, 250)); // Light blue background
 
         // Title
         JLabel titleLabel = new JLabel("Register to Travel Agency");

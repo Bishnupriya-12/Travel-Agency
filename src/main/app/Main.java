@@ -1,7 +1,6 @@
 package main.app;
-
+//import main.ui.DashboardUI;
 import main.ui.LoginUI;
-
 import javax.swing.*;
 
 public class Main {
@@ -15,7 +14,10 @@ public class Main {
 
         // Initialize and display the LoginUI in the same frame
         new LoginUI(frame);
-
+        //new DashboardUI(frame,"Arpita");
+        //new ChoosePackageUI(frame, null, null);
+        //new ChooseDateUI(frame, null, null, null, null);
+        //new ChooseTransportUI(frame, "Arpita");
         frame.setVisible(true); // Make the frame visible
     }
 }

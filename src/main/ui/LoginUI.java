@@ -29,18 +29,33 @@ public class LoginUI {
 
     private void initializeUI() {
         // Left panel for the image
+        // JPanel imagePanel = new JPanel();
+        // imagePanel.setBounds(0, 0, 350, 500);
+        // imagePanel.setLayout(new BorderLayout());
+
+        // JLabel imageLabel = new JLabel();
+        // imageLabel.setIcon(new ImageIcon("src/resources/loginIMG.jpg")); // Replace with your image path
+        // imageLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        // imagePanel.add(imageLabel, BorderLayout.CENTER);
+
         JPanel imagePanel = new JPanel();
+        imagePanel.setPreferredSize(new Dimension(350, 500));
         imagePanel.setBounds(0, 0, 350, 500);
         imagePanel.setLayout(new BorderLayout());
-
+        
         JLabel imageLabel = new JLabel();
-        imageLabel.setIcon(new ImageIcon("src/resources/loginIMG.jpg")); // Replace with your image path
         imageLabel.setHorizontalAlignment(SwingConstants.CENTER);
+
+        // Load and scale the image
+        ImageIcon originalIcon = new ImageIcon("src/resources/images/loginIMG.jpg"); // Replace with your image path
+        Image scaledImage = originalIcon.getImage().getScaledInstance(350, 500, Image.SCALE_SMOOTH);
+        imageLabel.setIcon(new ImageIcon(scaledImage));
+
         imagePanel.add(imageLabel, BorderLayout.CENTER);
 
         // Right panel for the login form
         JPanel loginPanel = new JPanel();
-        loginPanel.setBounds(350, 0, 450, 500);
+        //loginPanel.setBounds(350, 0, 450, 500);
         loginPanel.setLayout(null);
         loginPanel.setBackground(new Color(230, 240, 250)); // Light blue background
 
@@ -86,6 +101,7 @@ public class LoginUI {
         frame.add(imagePanel);
         frame.add(loginPanel);
 
+        
 
         // Action listeners for buttons
         loginButton.addActionListener(new ActionListener() {
@@ -99,7 +115,7 @@ public class LoginUI {
                 if (Authentication.isValidUser(username, password)) {
                     JOptionPane.showMessageDialog(frame, "Login successful!");
                     // Proceed to the dashboard (or home screen)
-                    new DashboardUI(frame); // Implement DashboardUI for redirection
+                    new DashboardUI(frame, username); // Implement DashboardUI for redirection
                 } else {
                     JOptionPane.showMessageDialog(frame, "Invalid credentials. Please try again.");
                 }

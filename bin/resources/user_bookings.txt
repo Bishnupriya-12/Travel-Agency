@@ -1,0 +1,16 @@
+Username: Broti
+Destination: Coxbazar
+Budget: Luxury
+Travel Type: Friends
+Start Date: 01/30/2025
+End Date: 02/07/2025
+Transport (Outbound): Business Flight
+Seats (Outbound): A1, A2, B3, B4
+Hotel: Four Seasons
+Room Type: Double
+Number of Rooms: 2
+Number of People: 4
+Total Cost: 1000
+Transport (Return): Luxury Train
+Seats (Return): B2, C3, C4, B1
+----------------------------

@@ -1,0 +1,9 @@
+Sylhet;Luxury;Hotel Ritz-300, Hotel Plaza-250;Single-50, Double-80, Suite-150
+Sylhet;Moderate;Eiffel Inn-150, Champs Stay-120;Single-40, Double-70, Suite-100
+Sylhet;Cheap;Eiffel Stay-80, Budget Lodge-50;Single-30, Double-50, Suite-70
+Dhaka;Luxury;The Plaza-500, Four Seasons-400;Single-70, Double-100, Suite-200
+Dhaka;Moderate;Central Park Stay-200, Manhattan Suites-180;Single-60, Double-90, Suite-130
+Dhaka;Cheap;Hostel NY-90, Budget Inn-70;Single-50, Double-60, Suite-80
+Coxbazar;Luxury;The Plaza-500, Four Seasons-400;Single-70, Double-100, Suite-200
+Coxbazar;Moderate;Central Park Stay-200, Manhattan Suites-180;Single-60, Double-90, Suite-130
+Coxbazar;Cheap;Hostel NY-90, Budget Inn-70;Single-50, Double-60, Suite-80
