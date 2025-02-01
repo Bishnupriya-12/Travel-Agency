@@ -2,6 +2,7 @@ package main.ui;
 
 import javax.swing.*;
 
+import main.admin_ui.AdminHotelSetupUI;
 import main.auth.Authentication;
 
 import java.awt.*;
@@ -28,16 +29,7 @@ public class LoginUI {
     }
 
     private void initializeUI() {
-        // Left panel for the image
-        // JPanel imagePanel = new JPanel();
-        // imagePanel.setBounds(0, 0, 350, 500);
-        // imagePanel.setLayout(new BorderLayout());
-
-        // JLabel imageLabel = new JLabel();
-        // imageLabel.setIcon(new ImageIcon("src/resources/loginIMG.jpg")); // Replace with your image path
-        // imageLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        // imagePanel.add(imageLabel, BorderLayout.CENTER);
-
+        
         JPanel imagePanel = new JPanel();
         imagePanel.setPreferredSize(new Dimension(350, 500));
         imagePanel.setBounds(0, 0, 350, 500);
@@ -107,22 +99,23 @@ public class LoginUI {
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Redirect to dashboard (logic will be added later)
-                //JOptionPane.showMessageDialog(frame, "Login clicked!");
+
                 String username = userText.getText();
                 String password = new String(passwordText.getPassword());
 
-                if (Authentication.isValidUser(username, password)) {
+                if(username.equals("admin") && password.equals("1")){
+                    new AdminHotelSetupUI(frame);
+                }  
+                else if (Authentication.isValidUser(username, password)) {
                     JOptionPane.showMessageDialog(frame, "Login successful!");
-                    // Proceed to the dashboard (or home screen)
                     new DashboardUI(frame, username); // Implement DashboardUI for redirection
-                } else {
+                }
+                else {
                     JOptionPane.showMessageDialog(frame, "Invalid credentials. Please try again.");
                 }
             }
         });
 
-        // Register button action
         registerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

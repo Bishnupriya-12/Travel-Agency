@@ -1,3 +1,2 @@
-horipriya288@gmail.com,Arpita,12345
-broti@gmail.com,Broti,12345
-bishnupriyabroti12@gmail.com,Bishnupriya,bb
+broti@gmail.com,Broti,1234
+bro@gmail.com,Bro,12,Broti,Yoo,20,Female,01234567,Dhaka

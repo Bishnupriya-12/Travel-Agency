@@ -1,16 +1,32 @@
 Username: Broti
-Destination: Coxbazar
-Budget: Luxury
-Travel Type: Friends
-Start Date: 01/30/2025
-End Date: 02/07/2025
-Transport (Outbound): Business Flight
-Seats (Outbound): A1, A2, B3, B4
-Hotel: Four Seasons
-Room Type: Double
-Number of Rooms: 2
-Number of People: 4
-Total Cost: 1000
-Transport (Return): Luxury Train
-Seats (Return): B2, C3, C4, B1
+Destination: Dhaka
+Budget: Cheap
+Travel Type: Just Me
+Start Date: 01/31/2025
+End Date: 02/02/2025
+Transport (Outbound): Train (Economy)
+Seats (Outbound): B1
+Hotel: Budget Inn
+Room Type: Single
+Number of Rooms: 1
+Number of People: 1
+Total Cost: 120
+Transport (Return): Train (Economy)
+Seats (Return): A1
+----------------------------
+Username: Bro
+Destination: Dhaka
+Budget: Cheap
+Travel Type: Just Me
+Start Date: 02/02/2025
+End Date: 02/05/2025
+Transport (Outbound): Bus
+Seats (Outbound): A1, A2
+Hotel: Hostel NY
+Room Type: Suite
+Number of Rooms: 1
+Number of People: 2
+Total Cost: 170
+Transport (Return): Bus
+Seats (Return): A3, A4
 ----------------------------

@@ -3,6 +3,7 @@ package main.ui;
 import javax.swing.*;
 
 import main.auth.Authentication;
+import main.models.User;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -35,17 +36,7 @@ public class RegisterUI {
         imageLabel.setIcon(new ImageIcon(scaledImage));
 
         imagePanel.add(imageLabel, BorderLayout.CENTER);
-        // Left panel for the image
-        // JPanel imagePanel = new JPanel();
-        // imagePanel.setBounds(0, 0, 350, 500);
-        // imagePanel.setLayout(new BorderLayout());
-
-        // // Add an image to the panel
-        // JLabel imageLabel = new JLabel();
-        // imageLabel.setIcon(new ImageIcon("src/resources/registerIMG.jpg")); // Add an appropriate image path
-        // imageLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        // imagePanel.add(imageLabel, BorderLayout.CENTER);
-
+        
         // Right panel for the register form
         JPanel registerPanel = new JPanel();
         registerPanel.setBounds(350, 0, 450, 500);
@@ -143,7 +134,9 @@ public class RegisterUI {
                     return;
                 }
 
-                if (Authentication.registerUser(email, username, password)) {
+                User newUser = new User(email, username, password);
+
+                if (Authentication.registerUser(newUser.getEmail(), newUser.getUsername(), newUser.getPassword())) {
                     JOptionPane.showMessageDialog(frame, "Registration successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
                     new LoginUI(frame); // Redirect to login
                 } else {

@@ -1,114 +1,3 @@
-// package main.ui;
-
-// import javax.swing.*;
-// import java.awt.*;
-// import java.awt.event.ActionEvent;
-// import java.awt.event.ActionListener;
-
-// public class DashboardUI {
-//     private JFrame frame;
-//     private String username;
-
-//     public DashboardUI(JFrame existingFrame, String username) {
-//         this.frame = existingFrame; // Reuse the existing frame
-//         this.username = username;
-//         frame.getContentPane().removeAll(); // Clear the frame
-//         initializeUI(); // Initialize the Dashboard UI
-//         frame.revalidate(); // Refresh the frame
-//         frame.repaint(); // Update the changes
-//     }
-
-//     public DashboardUI(JFrame existingFrame) {
-//         this.frame = existingFrame; // Reuse the existing frame
-//         this.username = null;
-//         frame.getContentPane().removeAll(); // Clear the frame
-//         initializeUI(); // Initialize the Dashboard UI
-//         frame.revalidate(); // Refresh the frame
-//         frame.repaint(); // Update the changes
-//     }
-
-//     private void initializeUI() {
-//         // Panel for the dashboard UI
-//         JPanel dashboardPanel = new JPanel();
-//         dashboardPanel.setLayout(null);
-//         dashboardPanel.setBackground(new Color(230, 240, 250)); // Light blue background
-
-//         JLabel titleLabel = new JLabel("Travel Agency Dashboard " + username);
-//         titleLabel.setFont(new Font("Arial", Font.BOLD, 20));
-//         titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
-//         titleLabel.setBounds(300, 50, 350, 30);
-//         dashboardPanel.add(titleLabel);
-
-//         // Buttons for dashboard options
-//         JButton destinationButton = new JButton("Choose Destination");
-//         destinationButton.setBounds(400, 150, 200, 30);
-//         destinationButton.setBackground(new Color(100, 200, 100));
-//         destinationButton.setForeground(Color.WHITE);
-//         destinationButton.setFont(new Font("Arial", Font.BOLD, 14));
-//         dashboardPanel.add(destinationButton);
-
-//         JButton bookingButton = new JButton("View Bookings");
-//         bookingButton.setBounds(400, 250, 200, 30);
-//         bookingButton.setBackground(new Color(100, 200, 100));
-//         bookingButton.setForeground(Color.WHITE);
-//         bookingButton.setFont(new Font("Arial", Font.BOLD, 14));
-//         dashboardPanel.add(bookingButton);
-
-//         JButton profileButton = new JButton("View profiles");
-//         profileButton.setBounds(400, 300, 200, 30);
-//         profileButton.setBackground(new Color(100, 200, 100));
-//         profileButton.setForeground(Color.WHITE);
-//         profileButton.setFont(new Font("Arial", Font.BOLD, 14));
-//         dashboardPanel.add(profileButton);
-
-//         JButton logoutButton = new JButton("Logout");
-//         logoutButton.setBounds(400, 350, 200, 30);
-//         logoutButton.setBackground(new Color(200, 100, 100));
-//         logoutButton.setForeground(Color.WHITE);
-//         logoutButton.setFont(new Font("Arial", Font.BOLD, 14));
-//         dashboardPanel.add(logoutButton);
-
-//         // Add the dashboard panel to the frame
-//         frame.add(dashboardPanel);
-
-//         // Action listeners for buttons
-//         destinationButton.addActionListener(new ActionListener() {
-//             @Override
-//             public void actionPerformed(ActionEvent e) {
-//                 JOptionPane.showMessageDialog(frame, "Choose Destination clicked!");
-//                 // Implement the logic to choose destination
-//                 new ChooseDestinationUI(frame,username);
-//             }
-//         });
-
-//         bookingButton.addActionListener(new ActionListener() {
-//             @Override
-//             public void actionPerformed(ActionEvent e) {
-//                 JOptionPane.showMessageDialog(frame, "View Bookings clicked!");
-//                 // Implement the logic to view bookings
-//                 new ViewBookingsUI(frame,username);
-//             }
-//         });
-
-//         profileButton.addActionListener(new ActionListener() {
-//             @Override
-//             public void actionPerformed(ActionEvent e) {
-//                new ProfileUI(frame, username);
-//             }
-//         });
-
-//         logoutButton.addActionListener(new ActionListener() {
-//             @Override
-//             public void actionPerformed(ActionEvent e) {
-//                 int confirm = JOptionPane.showConfirmDialog(frame, "Are you sure you want to log out?", "Logout Confirmation", JOptionPane.YES_NO_OPTION);
-//                 if (confirm == JOptionPane.YES_OPTION) {
-//                     new LoginUI(frame); // Redirect to Login UI
-//                 }
-//             }
-//         });
-//     }
-// }
-
 package main.ui;
 
 import javax.swing.*;
@@ -184,10 +73,10 @@ public class DashboardUI {
         frame.add(mainPanel, BorderLayout.CENTER);
 
         // Action listeners for buttons
-        destinationButton.addActionListener(e -> new ChooseDestinationUI(frame, username));
-        bookingButton.addActionListener(e -> new ViewBookingsUI(frame, username));
-        profileButton.addActionListener(e -> new ProfileUI(frame, username));
-        logoutButton.addActionListener(e -> {
+        destinationButton.addActionListener(_ -> new ChooseDestinationUI(frame, username));
+        bookingButton.addActionListener(_ -> new ViewBookingsUI(frame, username));
+        profileButton.addActionListener(_-> new ProfileUI(frame, username));
+        logoutButton.addActionListener(_ -> {
             int confirm = JOptionPane.showConfirmDialog(frame, "Are you sure you want to log out?", "Logout Confirmation", JOptionPane.YES_NO_OPTION);
             if (confirm == JOptionPane.YES_OPTION) {
                 stopImageSlider(); // Stop the slider when logging out
