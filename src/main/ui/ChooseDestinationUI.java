@@ -199,7 +199,7 @@ public class ChooseDestinationUI {
 
     private Set<String> loadDestinations() {
         Set<String> destinationSet = new LinkedHashSet<>(); // Preserve insertion order
-        try (BufferedReader reader = new BufferedReader(new FileReader("src/resources/destinations.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("src/resources/hotel.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(";"); // Split the line into parts

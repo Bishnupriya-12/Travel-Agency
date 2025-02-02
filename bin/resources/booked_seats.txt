@@ -18,3 +18,13 @@ From Destination: Dhaka
 Transport: Bus
 Seats: A3, A4
 ----------------------------
+Date: 02/03/2025
+Destination: Sylhet
+Transport: Train (AC)
+Seats: A2
+----------------------------
+Return Date: 02/05/2025
+From Destination: Sylhet
+Transport: Train (AC)
+Seats: C2
+----------------------------

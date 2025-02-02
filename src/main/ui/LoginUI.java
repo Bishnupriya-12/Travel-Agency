@@ -2,7 +2,7 @@ package main.ui;
 
 import javax.swing.*;
 
-import main.admin_ui.AdminHotelSetupUI;
+import main.admin_ui.DestinationUI;
 import main.auth.Authentication;
 
 import java.awt.*;
@@ -104,7 +104,7 @@ public class LoginUI {
                 String password = new String(passwordText.getPassword());
 
                 if(username.equals("admin") && password.equals("1")){
-                    new AdminHotelSetupUI(frame);
+                    new DestinationUI(frame);
                 }  
                 else if (Authentication.isValidUser(username, password)) {
                     JOptionPane.showMessageDialog(frame, "Login successful!");

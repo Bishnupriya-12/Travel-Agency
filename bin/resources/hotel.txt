@@ -1,0 +1,23 @@
+Dhaka;Cheap;Hotel Paradise-2000.Single-3000.Double-5000.Suite-8000, Hotel Regal-2500.Single-3500.Double-5500.Suite-9000
+Dhaka;Moderate;Hotel Grand-3000.Single-4000.Double-6000.Suite-9000, Hotel East-2800.Single-3800.Double-5800.Suite-8800
+Dhaka;Luxury;Hotel Intercontinental-5000.Single-7000.Double-9000.Suite-12000, Hotel Hilton-5500.Single-7500.Double-9500.Suite-12500
+
+Sylhet;Cheap;Hotel Greenview-1500.Single-2000.Double-3500.Suite-6000, Hotel Skyline-1800.Single-2200.Double-3700.Suite-6200
+Sylhet;Moderate;Hotel Hilltop-2500.Single-3200.Double-4500.Suite-7000, Hotel Royal-2700.Single-3500.Double-4700.Suite-7400
+Sylhet;Luxury;Hotel Hillcrest-4000.Single-5500.Double-7000.Suite-10000, Hotel Imperial-4200.Single-5800.Double-7200.Suite-10500
+
+Chittagong;Cheap;Hotel Bay-2000.Single-2800.Double-4200.Suite-6500, Hotel Ocean-2200.Single-3000.Double-4400.Suite-6800
+Chittagong;Moderate;Hotel Marina-2900.Single-3700.Double-5000.Suite-7500, Hotel Palm-3100.Single-3900.Double-5200.Suite-7800
+Chittagong;Luxury;Hotel Peninsula-4800.Single-6500.Double-8500.Suite-11000, Hotel Royal-5000.Single-6800.Double-8700.Suite-11500
+
+Coxbazar;Cheap;Hotel Bluewater-1800.Single-2500.Double-4000.Suite-6200, Hotel Seaview-1900.Single-2600.Double-4100.Suite-6300
+Coxbazar;Moderate;Hotel Sunset-2700.Single-3400.Double-4800.Suite-7000, Hotel Oceanfront-2800.Single-3500.Double-4900.Suite-7100
+Coxbazar;Luxury;Hotel Suncity-4200.Single-5800.Double-7500.Suite-10500, Hotel Grand Seaview-4400.Single-6000.Double-7700.Suite-10700
+
+Rajshahi;Cheap;Hotel Magnolia-1500.Single-2200.Double-3500.Suite-5500, Hotel Evergreen-1600.Single-2300.Double-3600.Suite-5600
+Rajshahi;Moderate;Hotel Green-2300.Single-3100.Double-4300.Suite-6800, Hotel Royal Raj-2400.Single-3200.Double-4400.Suite-6900
+Rajshahi;Luxury;Hotel Majestic-3800.Single-5300.Double-7100.Suite-9500, Hotel Palms-4000.Single-5500.Double-7300.Suite-9800
+
+Khulna;Cheap;Hotel Lotus-1600.Single-2200.Double-3400.Suite-5700, Hotel Riverbank-1700.Single-2300.Double-3500.Suite-5800
+Khulna;Moderate;Hotel City Inn-2400.Single-3200.Double-4600.Suite-7000, Hotel Sapphire-2500.Single-3300.Double-4700.Suite-7100
+Khulna;Luxury;Hotel Royal Plaza-4000.Single-5700.Double-7500.Suite-10000, Hotel Continental-4200.Single-5900.Double-7700.Suite-10200
